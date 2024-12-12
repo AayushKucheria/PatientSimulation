@@ -66,14 +66,10 @@ if prompt := st.chat_input("What's on your mind?"):
 with st.sidebar:
     st.title("About")
     st.markdown("""
-    This is a basic AI chat interface using:
-    - Streamlit
-    - OpenAI API with OpenRouter
-    - TODO for voice: elevenlabs.io (costly, best)
+    This is an AI chat interface for experimental use. It's code is currently public (for easier deployment).
                 
     The point of this interface is to make it easy for us to test out different interfaces (models, simulations, etc) and experiment with them.
                 
     It should offer us more freedom than what is possible with chatGPT, for example.
     
-    (Aayush Kucheria)
     """)

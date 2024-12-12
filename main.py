@@ -3,16 +3,6 @@ from openai import OpenAI
 import os
 from datetime import datetime
 
-def load_env_from_file():
-    with open('.env') as f:
-        for line in f:
-            if line.strip() and not line.startswith('#'):
-                key, value = line.strip().split('=', 1)
-                value = value.strip('"').strip("'")
-                os.environ[key] = value
-
-load_env_from_file()
-
 # Initialize OpenAI client with OpenRouter base URL
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
